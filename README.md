@@ -14,7 +14,7 @@ The following is the model architecture.
 - others
 
 ## Datasets
-- The model is currently trained on the [celeb-dataset](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html). Considering the lack of computing power, we only selected 10,000 pictures for training, which number from ```000001.jpg``` to ```005000.jpg``` and ```010001.jpg``` to ```015000.jpg```. Download the images from [here]() and save them in ```data```.  Our trainging dataset includes the ```label.txt```. 
+- The model is currently trained on the [celeb-dataset](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html). Considering the lack of computing power, we only selected 10,000 pictures for training, which number from ```000001.jpg``` to ```005000.jpg``` and ```010001.jpg``` to ```015000.jpg```. Download the images from [here](https://drive.google.com/open?id=1OBhGbYCgXVdTdGxZrDmO-ntsnPUhVaVr) and save them in ```data```.  Our trainging dataset includes the ```label.txt```. 
 
 - Make empty directories, ```samples```, ```checkpoint```. They will be used for sampling the generated images and saving the trained models.
 
@@ -48,7 +48,7 @@ The following is the model architecture.
     - 'generate_test_images': Number of images to generate during test. [100]
     
 - Generating Images from Vectors
-  * Write the vectors in text file, and save it as ```test/test_in/test_label.txt```. You can also download our test-dataset from [here](). Generate the Images for the vectors using:
+  * Write the vectors in text file, and save it as ```test/test_in/test_label.txt```. You can also download our test-dataset from [here](https://drive.google.com/open?id=1surDNUddnhMAHV0uvfkJjq1QWu0cRz0P). Generate the Images for the vectors using:
   ```
   python3 main.py
   ```
