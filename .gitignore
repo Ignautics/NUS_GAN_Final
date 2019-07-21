@@ -2,12 +2,12 @@
 __pycache__/
 *.py[cod]
 #data/
-test/
-logs/
+test_copy/
+logs_copy/
 data_back/
-data/
-checkpoint/
-samples/
+data_copy/
+checkpoint_copy/
+samples_copy/
 .DS_Store
 ./VisualPytorch/.DS_Store
 ./VisualPytorch/NeuralNetwork/translate/.DS_Store
