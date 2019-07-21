@@ -27,8 +27,8 @@ The following is the model architecture.
   * Options
     - `epoch`: Epoch to train[300]
     - `learning_rate`: Learning rate of for adam [0.0002]
-    - `beta1': Momentum term of adam [0.5]
-    - `train_size': The size of train images [np.inf]
+    - `beta1`: Momentum term of adam [0.5]
+    - `train_size`: The size of train images [np.inf]
     - `batch_size`: 50, "The size of batch images [50]
     - `input_height`: The size of image to use (will be center cropped). [218]
     - `input_width`: The size of image to use (will be center cropped). If None, same value as input_height [178]
