@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 #data/
+test/
 logs/
 data_back/
 data/
