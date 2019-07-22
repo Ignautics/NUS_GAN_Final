@@ -81,7 +81,8 @@ From the test results, we can see that our model probably restores the correspon
 
 
 ## Implementation Details
-
+- While processing the images before training, we've normalized the value from [0, 256] to N(-1, 1).
+- For Generator and Discriminator, we select different activity functions, namely ```Relu``` and ```LRelu```.
 
 ## References
 - [Text to image synthesis using thought vectors](https://github.com/paarthneekhara/text-to-image) Code
