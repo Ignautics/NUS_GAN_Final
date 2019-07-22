@@ -81,8 +81,13 @@ From the test results, we can see that our model probably restores the correspon
 
 
 ## Implementation Details
-- While processing the images before training, we've normalized the value from [0, 256] to N(-1, 1).
+- While processing the images before training, we've normalized the value from (0, 256) to (-1, 1).
 - For Generator and Discriminator, we select different activity functions, namely ```Relu``` and ```LRelu```.
+- For Discriminator, we weight the loss of the regression part and the loss of the image judgment part to obtain the final loss. The definition of ```d_loss``` is as follows:
+```
+self.d_loss = self.d_loss_real + self.d_loss_fake + self.L2_lambda2 * (self.y_loss_real + self.y_loss_fake)
+```
+Here, the value of ```self.L2_lambda2``` is 50.
 
 ## References
 - [Text to image synthesis using thought vectors](https://github.com/paarthneekhara/text-to-image) Code
