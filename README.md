@@ -88,7 +88,7 @@ From the test results, we can see that our model probably restores the correspon
 self.d_loss = self.d_loss_real + self.d_loss_fake + self.L2_lambda2 * (self.y_loss_real + self.y_loss_fake)
 ```
 Here, the value of ```self.L2_lambda2``` is 50.
-- For Generator, we also deal with the same way as Generator, only the meaning of the expression is different.
+- For Generator, we also deal with the same way as Discriminator, only the meaning of the expression is different.
 ```
 self.g_loss = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(logits=self.D_fake_logits, labels=tf.ones_like(self.D_fake))) + self.L1_lambda * tf.reduce_mean(tf.abs(inputs - self.G))
 ```
