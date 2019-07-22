@@ -93,7 +93,7 @@ self.g_loss = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(logits=self
 ```
 Here, the value of ```self.L1_lambda``` is 100.
  - While training the model, we will random the training data every training epoch to ensure that all data can be added to the training process.
- - - While processing the images before training, we've normalized the value from (0, 256) to (-1, 1). With this change in mind, the loss function used in the last layer of our generator is ```tf.nn.tanh```, not ```tf.nn.sigmoid```. It turns out that the effect is better.
+ - While processing the images before training, we've normalized the value from (0, 256) to (-1, 1). With this change in mind, the loss function used in the last layer of our generator is ```tf.nn.tanh```, not ```tf.nn.sigmoid```. It turns out that the effect is better.
 
 ## References
 - [Text to image synthesis using thought vectors](https://github.com/paarthneekhara/text-to-image) Code
