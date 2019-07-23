@@ -6,7 +6,8 @@ The following is the model architecture.
 ![model](./includes/model_now.jpg)
 And the next picture is our prospective design, a temporary version.
 ![model](./includes/model_future.jpg)
-
+The following is our poster.
+![poster](./includes/poster.pdf)
 ## Requirements
 - python3.6+
 - tensorflow
