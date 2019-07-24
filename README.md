@@ -64,6 +64,10 @@ The following is our poster.
  which ```1``` means ```yes``` and ```0``` means ```no```. You can get more details about label from [celeb-dataset](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)
 
 ## Training process
+<video id="video" controls="" preload="none">
+      <source id="ogv" src="./includes/final copy.mp4" type="video/ogg">
+    </video>
+
 
 ## Pre-trained Models
 - Download the pretrained model from [here](https://drive.google.com/open?id=1s0Uty5ZKcwhIK-V64V5iNIdTRDu-bgfY) and save it in ```checkpoint/celeb_50_218_178/```. You can choose one trained model to generate your images from ```checkpoint/celeb_50_218_178/``` by modifying file ```checkpoint```. 
